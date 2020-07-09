@@ -1,0 +1,15 @@
+<p>
+  parent-component works!<br>
+  {{messageCHild}}<br>
+  {{msgChild2}}
+
+</p>
+<div class="col-md-12">
+  <div class="col-md-6" style="background-color: chocolate">
+    <app-child-component [rcvMessage]="message" (msgEvent)="RecvMessage($event)"></app-child-component>
+  </div>
+
+  <div class="col-md-6" style="background-color: burlywood">
+    <app-child-two-component></app-child-two-component>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let a of listArticles, let i=index">
+    <div *ngIf=" i < nbrArticlesChild">
+      {{a.titre}}
+    </div>
+  </li>
+</ul>

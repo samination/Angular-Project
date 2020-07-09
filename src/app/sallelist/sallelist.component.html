@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let s of salles">
+  {{s.nom}} <a [routerLink]="['/salles',s.id]">Détails</a>
+  </li>
+</ul>

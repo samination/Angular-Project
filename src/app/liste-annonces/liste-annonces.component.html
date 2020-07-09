@@ -1,0 +1,14 @@
+<h2>Litse </h2>
+<ul>
+  <li *ngFor="let annonce of listAnnonces">
+    <div [hidden]="annonce.etat=='annulé'"
+         [ngStyle]="annonce.etat=='confirmé'? {'background-color': 'green'}:
+         {'background-color': 'yellow'}" >
+
+      {{annonce.titre}}--{{annonce.description}}--{{annonce.position}}--{{annonce.etat}}
+    </div>
+  </li>
+</ul>
+
+<!--<div *ngIf="annonce.etat != 'annulé'"
+[ngStyle]="{'backgroundColor':annonce.etat == 'confirmé' ? 'green' : 'orange'}">-->

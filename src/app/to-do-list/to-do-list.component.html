@@ -1,0 +1,8 @@
+<h1>List ToDo </h1>
+<button (click)="getNumber()">Calcul</button> <p>{{sum}}</p>
+<ul>
+  <li *ngFor="let todo of listTodo">
+    Id : {{todo.id}} -- Title : {{todo.title}} -- UserID : {{todo.userId}} -- completed : {{todo.completed}}
+  </li>
+</ul>
+

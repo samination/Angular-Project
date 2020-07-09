@@ -1,0 +1,9 @@
+<h1> Users List</h1>
+<input type="text" placeholder="User search" [(ngModel)]="userinput">
+<button (click)="verify()">verify</button>
+<p>Users: {{sumUsers}}</p>
+<ul>
+  <li *ngFor="let user of listUsers">
+    Id : {{user.id}} -- Title : {{user.username}} -- UserID : {{user.name}} -- completed : {{user.email}}
+  </li>
+</ul>

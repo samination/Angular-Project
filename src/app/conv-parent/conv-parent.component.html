@@ -1,0 +1,6 @@
+<p>
+  conv-parent works!
+  {{r}}
+</p>
+<input type="text" [(ngModel)]="v">
+<app-conv-child [x]="v" (sendres)="RcvValue($event)"></app-conv-child>
